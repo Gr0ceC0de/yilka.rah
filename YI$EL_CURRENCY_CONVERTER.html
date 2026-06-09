@@ -4,46 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ================= SEO ================= -->
-<title>YI$EL Intelligence System | Finance Network, Crypto & Market Wacht Dashboard, Trading Tools</title>
+<title>YI$EL Intelligence System</title>
 
-<meta name="description"
-content="YI$EL Intelligence System, financial Network, dashboard offering live currency conversion, crypto tracking, market news, trading tools, and secure user authentication system.">
-
-<meta name="keywords"
-content="finance dashboard, crypto tracker, currency converter, trading signals, MQL5 bots, forex tools, bitcoin price, stock market news, financial intelligence system">
-
-<meta name="author" content="YI$EL Intelligence">
-<meta name="robots" content="index, follow">
-<meta name="language" content="EN">
-
-<link rel="canonical" href="https://gr0cec0de.github.io/yilka.rah/YI$EL_CURRENCY_CONVERTER.html">
-
-<!-- ================= OPEN GRAPH ================= -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="YI$EL Intelligence Network">
-<meta property="og:description" content="Finance, crypto tracking, currency tools, and trading intelligence system.">
-<meta property="og:url" content="https://gr0cec0de.github.io/yilka.rah/YI$EL_CURRENCY_CONVERTER.html">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="YI$EL Intelligence Network">
-<meta name="twitter:description" content="Live financial intelligence dashboard with secure user system.">
-
-<!-- ================= STRUCTURED DATA ================= -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "YI$EL Intelligence Network",
-  "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Web",
-  "description": "Financial intelligence dashboard with trading tools, crypto tracking and secure user system.",
-  "url": "https://gr0cec0de.github.io/yilka.rah/YI$EL_CURRENCY_CONVERTER.html"
-}
-</script>
+<meta name="description" content="Finance dashboard with crypto tracking, currency tools and trading system.">
 
 <style>
-  :root {
+:root {
   --bg:#020617;
   --panel:rgba(15,23,42,0.7);
   --green:#22c55e;
@@ -51,25 +17,51 @@ content="finance dashboard, crypto tracker, currency converter, trading signals,
   --text:#e2e8f0;
 }
 
+/* BODY LAYOUT */
 body {
   margin:0;
   font-family: Consolas, monospace;
   background: linear-gradient(135deg,#020617,#0f172a);
   color:var(--text);
+  display:flex;
 }
-  
+
+/* SIDEBAR NAV */
+.side-nav {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:center;
+
+  background:white;
+  padding:15px;
+  width:120px;
+  min-height:100vh;
+}
+
+.side-nav a img {
+  height:38px;
+  display:block;
+}
+
+/* MAIN AREA */
+.main {
+  flex:1;
+  padding:20px;
+}
+
 /* HEADER */
 header {
   text-align:center;
-  padding:20px;
+  padding:10px;
 }
 
 /* GRID */
 .container {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:15px;
-  padding:20px;
+  padding:10px;
 }
 
 /* CARD */
@@ -77,17 +69,17 @@ header {
   background:var(--panel);
   padding:15px;
   border-radius:14px;
-  backdrop-filter:blur(12px);
   border:1px solid rgba(56,189,248,0.2);
 }
 
+/* TITLES */
 h2 {
   color:var(--blue);
   font-size:14px;
   text-transform:uppercase;
 }
 
-/* INPUT */
+/* INPUTS */
 input, select, button {
   width:100%;
   padding:10px;
@@ -107,17 +99,6 @@ button {
   cursor:pointer;
 }
 
-/* NAV */
-nav {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:10px;
-}
-nav img {
-  height:38px;
-}
-
 /* FOOTER */
 footer {
   text-align:center;
@@ -130,66 +111,49 @@ footer {
 
 <body>
 
+<!-- SIDEBAR -->
+<nav class="side-nav">
+  <a href="Wacht2.html"><img src="exchanges.gif" alt="rates"></a>
+  <a href="HEADLINES.html"><img src="headtitle.gif" alt="headlines"></a>
+  <a href="CLASSIFIED.html"><img src="classsified.gif" alt="properties"></a>
+  <a href="SHOPPING CART.html"><img src="shoppingcart.gif" alt="shopping"></a>
+  <a href="ABOUT US.html"><img src="aboutus.gif" alt="about"></a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
 <header>
   <h1 style="color:#38bdf8;">YI$EL INTELLIGENCE NETWORK</h1>
-
-  <nav>
-    <button class="ripple-btn"><a href="Wacht2.html"><img src="exchanges.gif" alt="rates"></a></button>
-       <button class="ripple-btn"><a href="HEADLINES.html"><img src="headtitle.gif" alt="headlines"></a></button>
-        <button class="ripple-btn"><a href="CLASSIFIED.html"><img src="classsified.gif" alt="properties"></a></button>
-     <button class="ripple-btn"><a href="SHOPPING CART.html"><img src="shoppingcart.gif" alt="shopping"></a></button>
-    <button class="ripple-btn"><a href="ABOUT US.html"><img src="aboutus.gif" alt="contact"></a><button class="ripple-btn"></button>
-  </nav>
-<style> .page {
-    display: flex;
-    flex-direction: column;  /* 🔥 isso faz ficar vertical */
-    align-items: center;     /* centraliza horizontalmente */
-    gap: 20px;               /* espaço entre os containers */
-    padding: 40px;}</style> 
-
-  <p>FINANCE • CRYPTO • FOREX • MARKET WACHT • TRADING SYSTEM</p>
+  <p>FINANCE • CRYPTO • FOREX • MARKET WATCH • TRADING SYSTEM</p>
 </header>
 
-<div class="container"><style>.container {
-    width: 80%;
-    max-width: 500px;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}</style>
+<div class="container">
 
-  <!-- ================= REGISTER USER ================= -->
+  <!-- REGISTER -->
   <div class="card">
-    <h2>NEW USER REGISTRATION</h2>
+    <h1>NEW USER REGISTRATION</h1>
     <input placeholder="First Name">
     <input placeholder="Last Name">
     <input placeholder="Email">
-    <input placeholder="Phone Number (+55...)">
+    <input placeholder="Phone (+55...)">
     <button>CREATE ACCOUNT</button>
   </div>
+    <div class="card">
+          <h2>CRYPTO WATCH</h2>
+          <p>BTC +2.4%</p>
+          <p>ETH +1.1%</p>
+        </div>
 
-  <!-- ================= LOGIN ================= -->
+  <!-- LOGIN -->
   <div class="card">
     <h2>LOGIN</h2>
     <input placeholder="Email or Username">
     <input type="password" placeholder="Password">
     <button>LOGIN</button>
-    <p style="font-size:11px;">Forgot password? Use recovery system below</p>
+    <p style="font-size:11px;">Forgot password? Use recovery system</p>
   </div>
-
-  <!-- ================= RECOVERY ================= -->
-  <div class="card">
-    <h2>ACCOUNT RECOVERY (WHATSAPP CODE)</h2>
-    <input placeholder="Registered Email or Phone">
-    <button>SEND RECOVERY CODE</button>
-    <p style="font-size:11px;">
-      Code will be sent via WhatsApp (requires backend API integration)
-    </p>
-  </div>
-
-  <!-- ================= CURRENCY ================= -->
-  <div class="card">
+   <div class="card">
     <h2>CURRENCY CONVERTER</h2>
     <input placeholder="Amount">
     <select>
@@ -201,17 +165,19 @@ footer {
     <button>CONVERT</button>
   </div>
 
-  <!-- ================= NEWS ================= -->
-  <!-- ================= CRYPTO ================= -->
+  <!-- RECOVERY -->
   <div class="card">
-    <h2>CRYPTO WATCH</h2>
-    <p>BTC +2.4%</p>
-    <p>ETH +1.1%</p>
+    <h2>ACCOUNT RECOVERY</h2>
+    <input placeholder="Email or Phone">
+    <button>SEND CODE</button>
+    <p style="font-size:11px;">WhatsApp/Email integration required backend</p>
   </div>
 </div>
 <footer>
   YI$EL INTELLIGENCE SYSTEM © 2026
 </footer>
+
+</div>
+
 </body>
 </html>
-
