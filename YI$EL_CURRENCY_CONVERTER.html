@@ -1,155 +1,200 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Primary SEO -->
-  <title>YI$EL Currency Converter | Live Exchange Rates & Global Currency Calculator</title>
+<title>YI$EL INTELLIGENCE | Finance & Classified Market Feed</title>
 
-  <meta name="description"
-        content="Convert currencies instantly with YI$EL Currency Converter. Access live exchange rates, real-time currency calculations, and accurate conversions for USD, EUR, BRL, GBP, JPY, and more.">
+<style>
+:root {
+  --bg: #020617;
+  --panel: rgba(15, 23, 42, 0.65);
+  --green: #22c55e;
+  --blue: #38bdf8;
+  --text: #e2e8f0;
+}
 
-  <meta name="keywords"
-        content="currency converter, exchange rates, live currency rates, forex calculator, USD to BRL, EUR to USD, currency exchange, money converter, global currencies, YI$EL">
+body {
+  margin: 0;
+  font-family: Consolas, "Courier New", monospace;
+  background:
+    linear-gradient(135deg, rgba(2,6,23,0.92), rgba(15,23,42,0.92)),
+    url("wall2.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text);
+}
 
-  <meta name="author" content="YI$EL">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="en">
-  <meta name="revisit-after" content="1 day">
+/* HEADER */
+header {
+  padding: 20px;
+  text-align: center;
+}
 
-  <!-- Canonical -->
-  <link rel="canonical"
-        href="https://gr0cec0de.github.io/yilka.rah/YI$EL_CURRENCY_CONVERTER.ht">
+header p {
+  font-size: 12px;
+  opacity: 0.7;
+}
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title"
-        content="YI$EL Currency Converter | Live Exchange Rates">
-  <meta property="og:description"
-        content="Fast and accurate currency conversions with live exchange rates from major world currencies.">
-  <meta property="og:url"
-        content="https://gr0cec0de.github.io/yilka.rah/YI$EL_CURRENCY_CONVERTER.ht">
-  <meta property="og:site_name" content="YI$EL Currency Converter">
+/* NAV */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
 
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title"
-        content="YI$EL Currency Converter">
-  <meta name="twitter:description"
-        content="Real-time exchange rates and currency conversion calculator.">
-  <meta name="twitter:creator" content="@Yisel">
-  <!-- Theme -->
-  <meta name="theme-color" content="#0f172a">
-  <meta name="color-scheme" content="dark light">
-  <!-- Performance -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	</head>
-<body> <style>
-    :root {
-      --primary: #22c55e;
-      --secondary: #0f172a;
-      --accent: #38bdf8;
-      --bg: #020617;
-      --text: #f8fafc;
-    }
+nav a img {
+  height: 40px;
+  transition: 0.2s;
+}
 
-    body {
-		font-family: Consolas, "Courier New", monospace;
-		background: linear-gradient(135deg, rgba(2, 6, 23, 0.85), rgba(15, 23, 42, 0.85)),
-		url("wall2.gif");
-		  background-size: cover;
-		  background-position: center;
-		  background-repeat: no-repeat;
-		  background-attachment: fixed;
-		      margin: 0;  
-        }
+nav a img:hover {
+  transform: scale(1.05);
+}
 
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      text-align: center;
-      background: linear-gradient(90deg, var(--primary), var(--accent));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+/* GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
 
-    .converter-container {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      border-radius: 20px;
-      backdrop-filter: blur(12px);
-      background: rgba(255,255,255,0.05);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-    }
+/* PANELS */
+.card {
+  background: var(--panel);
+  border: 1px solid rgba(56,189,248,0.2);
+  border-radius: 16px;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+}
 
-    input,
-    select,
-    button {
-      width: 100%;
-      padding: 14px;
-      margin-top: 10px;
-      border-radius: 12px;
-      border: none;
-      font-size: 1rem;
-    }
+.card h2 {
+  color: var(--blue);
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
 
-    button {
-      background: linear-gradient(90deg, var(--primary), var(--accent));
-      color: white;
-      font-weight: 700;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+/* INPUTS */
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  background: #0f172a;
+  color: var(--green);
+}
 
-    button:hover {
-      transform: translateY(-2px);
-      opacity: 0.95;
-    }
-  </style>
-            <header>    
-            <nav><a href="YI$EL_CURRENCY_CONVERTER.html"><img src="frog1.jpg" width="20%" alt="currency conversor"></a> &nbsp; <a href="Wacht2.html"><img src="exchanges.gif" alt="rates"></a>&nbsp; <a href="HEADLINES.html"><img src="headtitle.gif" alt="headlines"></a> &nbsp; <a href="CLASSIFIED.html"><img src="classsified.gif" alt="properties"> </a> &nbsp; <a href="SHOPPING CART.html"><img src="shoppingcart.gif" alt="shooping"></a> &nbsp; <a href="ABOUT US.html"><img src="aboutus.gif" alt="contact"> </a> &nbsp; &nbsp;<a href="ROBOT & TOOLS.html"><img src="botwithpc 2.jpg" alt="Advisor mql4"></a> &nbsp;</p></nav>
-		<p>नमस्ते Bem-vindo! добро пожаловать! En Hora Buena! هلاً وسهلاً Bienvenue! 歡迎  Welcome!.Bem-vindo! добро пожаловать! En Hora Buena! هلاً وسهلاً Bienvenue! 歡迎  Welcome! </p>
-	</header>
-            <h1>
-                <nav>
-                    <table>
-                        <tr>
-                            <td><form style="display: flex position: relative top: 0 right: 0 margin: 15px;" action="processa_login.php" method="post"><label><img src="USER.gif"></label><input type="text" name="username" required>
-                        <label><img src="password.gif"></label><input type="password" name="password" required><button type="submit"><img src="GO.gif"></button><display: text-align: left;margin-left: 0;margin-right:0; width: 100%;></display:>
-                        </form></td>
-                        </tr>
-                    <tr>
-                    <td><a href="mailto:yigraciel@hotmail.com?subject=Question/Comment" title="yigraciel@hotmail.com" style="color: white; text-decoration:none"><img src="email.gif" alt="contact"></a> &nbsp;
-                    </td>
-                    </tr>
-                        </table>
-                </nav>
-            </h1>
-            <h2>
-                <table>
-                    <div style="display: flex; position: relative; top: 0%; left: 0%;">
-                        <div>
-                            <tr>
-                            <td>
-                                <form form style="padding: right 50px;%;" form style="padding-left: 10%;" action="/enviar-dados" method="POST">
-                                <label for="nome"><img src="new user.gif"></label>
-                                  <input type="text" id="nome" name="nome" required>
-                                  <label for="email"><img src="emailrquest.gif"></label>
-                                  <input type="email" id="email" name="email">
-                                  <button type="submit">SUBMIT</button>&nbsp;
-                            </form>
-                          </td>
-                                <td><form><label for="telefone"><img src="numberphone.gif"></label>
-                                <input 
-                                    type="tel" 
-                                    id="telefone" 
-                                    name="telefone" 
-                                    placeholder="(11) 99999-9999" 
-                                    pattern="\(\d{2}\)\s\d{5}-\d{4}" 
-                                    required><button type="submit"><img src="CODE.gif"></button></form></td>
-                                </tr>
-                            <tr>
-                                <td><td style="left:auto;"><a href="https://wa.me/+5511939385258" target="_blank" position:absolute; top: 50px; left: 100px;><img src="whatsapp 4.0.gif" style="padding-right: 0cap;" alt="WhatsApp"></a> &nbsp; </td>
-                                </tr></table>
-        </body
-    </html>
+button {
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* NEWS STYLE */
+.news {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.news span {
+  color: var(--green);
+}
+
+/* FOOTER FEEL */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 11px;
+  opacity: 0.5;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 style="color:#38bdf8;">YI$EL INTELLIGENCE NETWORK</h1>
+
+  <nav>
+    <a href="#"><img src="frog1.jpg"></a>
+    <a href="#"><img src="exchanges.gif"></a>
+    <a href="#"><img src="headtitle.gif"></a>
+    <a href="#"><img src="classsified.gif"></a>
+    <a href="#"><img src="shoppingcart.gif"></a>
+    <a href="#"><img src="aboutus.gif"></a>
+    <a href="#"><img src="botwithpc 2.jpg"></a>
+  </nav>
+
+  <p>GLOBAL FINANCE • NEWS INTELLIGENCE • CRYPTO • STOCKS • MQL5 SIGNALS</p>
+</header>
+
+<div class="container">
+
+  <!-- LOGIN -->
+  <div class="card">
+    <h2>SECURE LOGIN</h2>
+    <input type="text" placeholder="username">
+    <input type="password" placeholder="password">
+    <button>ACCESS</button>
+  </div>
+
+  <!-- EXCHANGE -->
+  <div class="card">
+    <h2>CURRENCY CONVERTER</h2>
+    <input placeholder="amount">
+    <select>
+      <option>USD</option>
+      <option>EUR</option>
+      <option>BRL</option>
+      <option>JPY</option>
+    </select>
+    <button>CONVERT</button>
+  </div>
+
+  <!-- HEADLINES -->
+  <div class="card news">
+    <h2>MARKET HEADLINES</h2>
+    <p><span>•</span> USD strengthens against BRL amid volatility</p>
+    <p><span>•</span> Bitcoin stabilizes after correction</p>
+    <p><span>•</span> Gold futures rise on global uncertainty</p>
+    <p><span>•</span> MQL5 bots show increased trading activity</p>
+  </div>
+
+  <!-- CRYPTO / STOCKS -->
+  <div class="card news">
+    <h2>CRYPTO / STOCK WATCH</h2>
+    <p><span>BTC</span> +2.4%</p>
+    <p><span>ETH</span> +1.1%</p>
+    <p><span>NASDAQ</span> -0.3%</p>
+    <p><span>S&P500</span> +0.6%</p>
+  </div>
+
+  <!-- MQL5 -->
+  <div class="card">
+    <h2>MQL5 SIGNALS</h2>
+    <p class="news">
+      Automated trading systems available.<br>
+      Copy trading signals and EA bots.
+    </p>
+    <button>VIEW OFFERS</button>
+  </div>
+
+</div>
+
+<footer>
+  CLASSIFIED FINANCIAL INTELLIGENCE SYSTEM © YI$EL
+</footer>
+
+</body>
+</html>
