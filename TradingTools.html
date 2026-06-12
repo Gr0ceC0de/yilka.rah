@@ -11,264 +11,7 @@
 <meta name="author" content="Yi-Sell">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
-body{
-    background:var(--bg);
-    color:var(--text);
-    font-family:'Inter',sans-serif;
-}
-
-.container{
-    width:min(1400px,95%);
-    margin:auto;
-}
-
-/* HEADER */
-
-header{
-    padding:30px 0;
-}
-
-.topbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:20px;
-}
-
-.logo{
-    font-size:3rem;
-    font-weight:800;
-    letter-spacing:-2px;
-}
-
-.languages{
-    display:flex;
-    gap:15px;
-}
-
-.lang-btn{
-    width:90px;
-    height:60px;
-    border:2px solid white;
-    border-radius:18px;
-    background:transparent;
-    color:white;
-    font-size:1.5rem;
-    font-weight:700;
-    cursor:pointer;
-}
-
-.lang-btn:hover{
-    background:white;
-    color:black;
-}
-
-/* HERO */
-
-.hero{
-    margin-top:40px;
-    border-left:6px solid var(--primary);
-    padding-left:35px;
-}
-
-.hero-tag{
-    color:var(--primary);
-    font-size:1.1rem;
-    font-weight:800;
-    text-transform:uppercase;
-    margin-bottom:15px;
-}
-
-.hero h1{
-    font-size:4rem;
-    line-height:1.1;
-    margin-bottom:25px;
-    max-width:900px;
-}
-
-.hero p{
-    font-size:1.8rem;
-    color:var(--muted);
-    line-height:1.6;
-    max-width:1100px;
-}
-
-/* TABS */
-
-.tabs{
-    display:flex;
-    gap:60px;
-    margin-top:70px;
-    border-bottom:1px solid #444;
-}
-
-.tabs a{
-    text-decoration:none;
-    color:#ddd;
-    font-size:1.8rem;
-    font-weight:600;
-    padding-bottom:20px;
-}
-
-.tabs a.active{
-    color:var(--primary);
-    border-bottom:4px solid var(--primary);
-}
-
-/* SECTION */
-
-.section-title{
-    margin-top:40px;
-    margin-bottom:25px;
-    font-size:1.6rem;
-    color:#bdbdbd;
-    letter-spacing:2px;
-    text-transform:uppercase;
-}
-
-/* PRODUCTS */
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:var(--card);
-    border:1px solid var(--card-border);
-    border-radius:24px;
-    padding:35px;
-    min-height:520px;
-    display:flex;
-    flex-direction:column;
-}
-
-.card.featured{
-    border:2px solid var(--primary);
-}
-
-.badge{
-    display:inline-block;
-    background:var(--primary-light);
-    color:#0f7664;
-    font-size:1.3rem;
-    padding:10px 18px;
-    border-radius:30px;
-    margin-bottom:30px;
-}
-
-.icon{
-    color:var(--primary);
-    font-size:2rem;
-    margin-bottom:25px;
-}
-
-.card h2{
-    font-size:2.2rem;
-    margin-bottom:20px;
-}
-
-.card p{
-    color:var(--muted);
-    font-size:1.6rem;
-    line-height:1.7;
-    margin-bottom:35px;
-}
-
-.price{
-    font-size:3rem;
-    font-weight:700;
-    margin-top:auto;
-}
-
-.price span{
-    font-size:1.5rem;
-    color:#ccc;
-    font-weight:400;
-}
-
-.btn{
-    margin-top:30px;
-    display:block;
-    text-align:center;
-    text-decoration:none;
-    color:white;
-    border:1px solid #666;
-    border-radius:18px;
-    padding:22px;
-    font-size:2rem;
-    transition:.25s;
-}
-
-.btn:hover{
-    background:var(--primary);
-    color:black;
-    border-color:var(--primary);
-}
-
-/* FOOTER */
-
-footer{
-    margin-top:80px;
-    padding:30px 0;
-    border-top:1px solid #444;
-}
-
-.footer-links{
-    display:flex;
-    gap:50px;
-    flex-wrap:wrap;
-}
-
-.footer-links a{
-    color:#bdbdbd;
-    text-decoration:none;
-    font-size:1.4rem;
-}
-
-.footer-links a:hover{
-    color:white;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:2.4rem;
-}
-
-.hero p{
-    font-size:1.2rem;
-}
-
-.tabs{
-    gap:20px;
-    overflow:auto;
-}
-
-.tabs a{
-    font-size:1.2rem;
-}
-
-.grid{
-    grid-template-columns:1fr;
-}
-
-.logo{
-    font-size:2rem;
-}
-
-.lang-btn{
-    width:70px;
-    height:50px;
-    font-size:1rem;
-}
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -331,13 +74,9 @@ MQL5 Tools
 Best seller
 </div>
 
-<div class="icon">
-□
-</div>
+<div class="icon">□</div>
 
-<h2>
-Trading Assistant
-</h2>
+<h2>Trading Assistant</h2>
 
 <p>
 Full forex automation robot.
@@ -350,8 +89,7 @@ risk controls.
 R$ 899 <span>/once</span>
 </div>
 
-<a
-class="btn"
+<a class="btn"
 href="https://link.infinitepay.io/yakelin-yisel/VC1DLUMtSQ-liQolwtIXB-899,99"
 target="_blank">
 Buy ↗
@@ -361,13 +99,9 @@ Buy ↗
 
 <div class="card">
 
-<div class="icon">
-□
-</div>
+<div class="icon">□</div>
 
-<h2>
-Trend Advisory Indicator
-</h2>
+<h2>Trend Advisory Indicator</h2>
 
 <p>
 Script .mql5 signal indicator.
@@ -379,8 +113,7 @@ momentum shifts on any timeframe.
 R$ 350 <span>/once</span>
 </div>
 
-<a
-class="btn"
+<a class="btn"
 href="https://link.infinitepay.io/yakelin-yisel/VC1DLUMtSQ-eyqxbzbr2s-350,00"
 target="_blank">
 Buy ↗
@@ -390,13 +123,9 @@ Buy ↗
 
 <div class="card">
 
-<div class="icon">
-□
-</div>
+<div class="icon">□</div>
 
-<h2>
-Custom Bot Development
-</h2>
+<h2>Custom Bot Development</h2>
 
 <p>
 Commission a trading bot built to your exact strategy.
@@ -408,8 +137,7 @@ Includes 30-day support.
 From R$ 1,200
 </div>
 
-<a
-class="btn"
+<a class="btn"
 href="https://wa.me/+5511939385258"
 target="_blank">
 Request ↗
@@ -435,5 +163,4 @@ Request ↗
 
 </body>
 </html>
-
-
+    
