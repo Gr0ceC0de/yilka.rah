@@ -52,9 +52,9 @@ html{
 }
 
 body{ 
-    display: flex;
+   
     justify-content: center; /* centra horizontalmente */
-    align-items: center;     /* centra verticalmente */
+        /* centra verticalmente */
 }
 
     min-height:100vh;
