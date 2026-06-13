@@ -12,28 +12,15 @@
 </head>
 
 <body>
-
-<div class="container">
-
-<nav>
-<a href="TradingTools.html" class="ripple-btn">
-<img src="docs/rob.gif" alt="FOREX EA">
-</a>
-<a href="MARKET(OVER)VIEW.html" class="ripple-btn">
-<img src="docs/exchanges.gif" alt="Rates">
-</a>
-<a href="HEADLINES.html" class="ripple-btn">
-<img src="docs/headtitle.gif" alt="Headlines">
-</a>
-<a href="classifieds.html" class="ripple-btn">
-<img src="docs/classsified.gif" alt="Classified">
-</a>
-<a href="shopping456.html" class="ripple-btn">
-<img src="docs/shoppingcart.gif" alt="Shopping">
-</a>
-</nav>
-
-
+   <header>
+                        <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
+                </header>
 <h1>📰 Global Headlines – Technology, Fintech & Crypto</h1>
 
 <p class="subtitle">
