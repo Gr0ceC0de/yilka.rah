@@ -29,13 +29,24 @@
     </style>    
                 
                 <header>
-                        <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      });
-  </script>
+                     <div id="header-placehold"></div>
+                      <script>
+        // Fetch the file content
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Insert the HTML into the placeholder
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('There was a problem loading the header:', error);
+            });
+    </script>
                 </header>
                         <h1>Currency Pair$ Review</h1>
         <table>
